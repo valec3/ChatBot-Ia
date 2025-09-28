@@ -60,7 +60,7 @@ class ChatBot:
         # Buscar coincidencias en las opciones
         for option in self.responses:
             option_words = option.lower().split()
-            common_words = set(option_words) & set(words_prompt)
+            common_words = set(option_words) & set(words_prompt) # Intersección de palabras comunes
             if len(common_words) >= 1:
                 self.save_response(prompt, self.responses[option])
                 return self.responses[option]
