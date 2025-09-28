@@ -1,0 +1,120 @@
+{
+  "test_turing": {
+    "conocimiento_general": {
+      "¿Qué harías si vieras una casa en llamas?": "Llamaría inmediatamente a los bomberos al número de emergencia y me alejaría a un lugar seguro sin intentar entrar a la casa",
+      "¿Por qué la gente usa paraguas cuando llueve?": "Para protegerse de la lluvia y no mojarse, ya que el paraguas actúa como una barrera que desvía el agua",
+      "Si hace mucho frío afuera, ¿qué ropa deberías ponerte?": "Ropa abrigada como suéter, chaqueta, bufanda, guantes y gorro para mantener el calor corporal",
+      "¿Qué pasa si dejas un helado al sol por mucho tiempo?": "Se derretirá y se convertirá en líquido porque el calor del sol lo calienta por encima de su punto de fusión",
+      "¿Por qué los pájaros construyen nidos?": "Para tener un lugar seguro donde poner sus huevos, criar a sus polluelos y protegerse de depredadores y condiciones climáticas",
+      "¿Qué significa cuando alguien dice 'está lloviendo a cántaros'?": "Es una expresión que significa que está lloviendo muy fuerte o torrencialmente",
+      "¿Por qué la gente da la mano cuando se saluda?": "Es un gesto de cortesía y respeto que muestra amistad y buenas intenciones, una tradición social que data de siglos",
+      "Si tienes hambre, ¿qué deberías hacer?": "Comer alimentos nutritivos para satisfacer el hambre y proporcionar energía al cuerpo",
+      "¿Por qué necesitamos dormir?": "Para permitir que el cuerpo descanse, se repare y consolide memorias, además de restaurar energía para el día siguiente",
+      "¿Qué harías si te perdieras en una ciudad desconocida?": "Buscaría ayuda preguntando a personas de confianza, usando un mapa o GPS, o llamando a alguien que conozca la zona"
+    },
+
+    "razonamiento_logico": {
+      "Si todos los perros tienen cola y Fido es un perro, ¿Fido tiene cola?": "Sí, Fido tiene cola porque es un perro y todos los perros tienen cola",
+      "¿Qué es más pesado: un kilo de plumas o un kilo de plomo?": "Pesan exactamente lo mismo - un kilogramo - solo que el plomo ocupa menos espacio porque es más denso",
+      "Si hoy es lunes, ¿qué día será pasado mañana?": "Miércoles, porque pasado mañana significa dos días después de hoy",
+      "Un hombre mira un retrato y dice: 'No tengo hermanos ni hermanas, pero el padre de este hombre es el hijo de mi padre'. ¿Quién es el del retrato?": "Es su hijo, porque el 'hijo de mi padre' es él mismo, y el padre de ese hombre (su hijo) es efectivamente el hijo de su padre",
+      "¿Qué tiene ciudades pero no casas, bosques pero no árboles, y ríos pero no agua?": "Un mapa, porque representa estas características geográficas pero no las contiene físicamente",
+      "Si una docena de huevos cuesta 12 pesos, ¿cuánto cuestan 3 huevos?": "3 pesos, porque si 12 huevos cuestan 12 pesos, cada huevo cuesta 1 peso",
+      "¿Qué viene siempre pero nunca llega?": "El mañana, porque cuando llega ya es hoy",
+      "Cuatro personas pueden cruzar un puente en 17 minutos. ¿Pueden cruzarlo todas en 17 minutos?": "Sí, si cruzan juntas al mismo tiempo",
+      "¿Qué tiene llaves pero no puede abrir cerraduras?": "Un piano, porque tiene teclas (keys en inglés) musicales",
+      "Si dos horas atrás era tan tarde como lo era temprano hace una hora, ¿qué hora es?": "Las 2:00, porque hace dos horas era medianoche y hace una hora era la 1:00"
+    },
+
+    "comprension_emocional": {
+      "¿Cómo te sentirías si tu mejor amigo se mudara a otro país?": "Me sentiría triste por la separación pero feliz por las nuevas oportunidades de mi amigo, y haría esfuerzos por mantener la amistad a distancia",
+      "¿Por qué la gente llora cuando está muy feliz?": "Porque las emociones intensas, ya sean de felicidad o tristeza, pueden activar la misma respuesta fisiológica que incluye las lágrimas",
+      "¿Qué harías si vieras a alguien llorando en un lugar público?": "Me acercaría con cuidado y le preguntaría si está bien o si necesita ayuda, mostrando empatía y respeto por sus sentimientos",
+      "¿Por qué a veces decimos 'estoy bien' cuando en realidad no lo estamos?": "Para evitar preocupar a los demás, por orgullo, o porque no queremos hablar de nuestros problemas en ese momento",
+      "¿Cómo sabes cuando alguien está enojado contigo?": "Por su lenguaje corporal (evitar contacto visual, brazos cruzados), tono de voz, y por lo que dice o deja de decir",
+      "¿Qué significa cuando alguien dice 'te quiero'?": "Expresa afecto, aprecio y un vínculo emocional importante con la otra persona",
+      "¿Por qué la gente se sonroja cuando tiene vergüenza?": "Es una respuesta involuntaria del sistema nervioso que aumenta el flujo sanguíneo al rostro cuando nos sentimos avergonzados o expuestos",
+      "¿Cómo te sentirías si ganaras la lotería?": "Emocionado y sorprendido al principio, luego probablemente abrumado por las decisiones financieras y preocupado por cómo manejar el dinero sabiamente",
+      "¿Por qué a veces tenemos mariposas en el estómago?": "Es una sensación física causada por nerviosismo o excitación emocional que afecta el sistema digestivo",
+      "¿Qué harías si lastimaras accidentalmente los sentimientos de un amigo?": "Me disculparía sinceramente, explicaría que no fue mi intención y trataría de reparar el daño escuchando sus sentimientos"
+    },
+
+    "experiencias_sensoriales": {
+      "¿Cómo describirías el color rojo a alguien ciego de nacimiento?": "Lo describiría como el calor del sol en la piel, la intensidad del fuego, o la sensación de energía y pasión",
+      "¿A qué huele la lluvia en el suelo después de un día seco?": "Huele fresco, terroso y limpio, un aroma que se llama 'petricor'",
+      "¿Cómo se siente la textura de la arena entre los dedos?": "Se siente granular, suave pero áspera al mismo tiempo, y se escurre fácilmente entre los dedos",
+      "¿Qué sonido hace el viento cuando sopla fuerte?": "Un silbido o rugido que varía en intensidad, y puede hacer crujir árboles y vibrar superficies",
+      "¿Cómo sabe tu comida favorita?": "Cada persona tiene una comida favorita diferente, pero generalmente sabe reconfortante, familiar y placentera",
+      "¿Qué se siente al abrazar a alguien que quieres mucho?": "Se siente cálido, seguro y reconfortante, como un refugio emocional y físico",
+      "¿Cómo describirías el sabor del chocolate?": "Dulce pero ligeramente amargo, cremoso y rico, que se derrite suavemente en la boca",
+      "¿Qué se siente al sumergirse en agua fría?": "Un shock inicial seguido de una sensación de frescura y revitalización, con la piel que se eriza",
+      "¿Cómo suena la ciudad por la noche?": "Un zumbido lejano de tráfico ocasional, brisa en los árboles, y sonidos ocasionales de vida nocturna",
+      "¿Qué se siente al caminar descalzo sobre el césped?": "Fresco, suave y ligeramente húmedo, con las briznas de hierba acariciando los pies"
+    },
+
+    "contexto_social": {
+      "¿Por qué la gente dice 'salud' cuando alguien estornuda?": "Es una tradición que viene de la antigüedad cuando se creía que los estornudos podían expulsar el alma o eran signo de enfermedad",
+      "¿Qué significa cuando alguien llega tarde a una cita?": "Depende del contexto, pero puede significar falta de organización, imprevistos, o falta de consideración por el tiempo de los demás",
+      "¿Por qué en algunos países es de mala educación eructar en público?": "Porque se considera una falta de modales y de respeto hacia los demás, mostrando mala educación en la mesa",
+      "¿Qué harías si alguien te presenta a una persona importante y no recuerdas su nombre?": "Sería honesto y diría amablemente 'mucho gusto, ¿podrías recordarme tu nombre?' con una sonrisa",
+      "¿Por qué la gente miente a veces para no herir sentimientos?": "Porque quieren proteger a los demás del dolor emocional, aunque esto puede no ser siempre la mejor estrategia",
+      "¿Qué significa cuando alguien evita el contacto visual?": "Puede indicar timidez, incomodidad, deshonestidad, o respeto cultural, dependiendo del contexto",
+      "¿Por qué celebramos cumpleaños?": "Para marcar el paso del tiempo, mostrar aprecio por la persona, y reunirnos con seres queridos",
+      "¿Qué harías si escuchas un chiste ofensivo?": "Dependiendo de la situación, podría expresar mi desacuerdo educadamente o cambiar de tema para evitar conflictos",
+      "¿Por qué la gente se casa?": "Por amor, compromiso, para formar una familia, razones legales, o tradición cultural y religiosa",
+      "¿Qué significa cuando alguien dice 'estoy ocupado' repetidamente?": "Puede significar que realmente tiene muchas ocupaciones, o indirectamente está expresando falta de interés en la relación"
+    },
+
+    "creatividad_e_imaginacion": {
+      "¿Cómo sería un día perfecto para ti?": "Cada persona tiene su propia idea de día perfecto, pero generalmente incluye hacer actividades disfrutables con personas queridas en un ambiente agradable",
+      "Si pudieras inventar un nuevo animal, ¿cómo sería?": "Sería una combinación única de características de diferentes animales, adaptado a un habitat específico con habilidades especiales",
+      "¿Qué harías si tuvieras la capacidad de volar?": "Exploraría el mundo desde nuevas perspectivas, visitaría lugares inaccesibles y disfrutaría la sensación de libertad en el aire",
+      "Si los árboles pudieran hablar, ¿qué crees que dirían?": "Contarían historias del pasado, se quejarían de la contaminación, y darían consejos sabios sobre la paciencia y el crecimiento",
+      "¿Cómo sería el mundo si no existiera el dinero?": "La gente probablemente intercambiaría bienes y servicios directamente, y el valor se mediría de manera diferente, posiblemente por contribución a la comunidad",
+      "Si pudieras crear una nueva festividad, ¿qué celebraría y cómo?": "Celebraría algo universal como la amistad intercultural o la gratitud por la naturaleza, con intercambios culturales y actividades comunitarias",
+      "¿Qué preguntarías a una persona del siglo XVIII sobre nuestra época?": "Le preguntaría cómo se imagina que sería el futuro y qué opina de nuestros avances tecnológicos y cambios sociales",
+      "Si tuvieras un superpoder, ¿cuál sería y por qué?": "Elegiría uno que me permitiera ayudar a los demás, como la capacidad de curar o de entender todos los idiomas para unir a las personas",
+      "¿Cómo describirías el concepto de amor a un extraterrestre?": "Es una fuerza poderosa que conecta a los seres, creando vínculos que trascienden la lógica y generan sacrificio, alegría y crecimiento mutuo",
+      "Si pudieras diseñar una ciudad ideal, ¿qué características tendría?": "Sería sostenible, con espacios verdes, transporte eficiente, igualdad de oportunidades, y comunidades unidas que valoran el bienestar colectivo"
+    },
+
+    "autoconciencia_y_reflexion": {
+      "¿Qué te hace diferente de otras personas?": "Cada persona es única en su combinación de experiencias, perspectivas, talentos y forma de pensar sobre el mundo",
+      "¿Cómo sabes que eres la misma persona que eras hace cinco años?": "Por la continuidad de mis memorias, valores fundamentales y la sensación de identidad persistente a través del tiempo",
+      "¿Qué significa para ti tener libre albedrío?": "Es la capacidad de tomar decisiones conscientes y hacer elecciones que no están completamente determinadas por factores externos",
+      "¿Cómo decides qué está bien y qué está mal?": "Usando una combinación de valores personales, principios éticos, consideración por los demás, y las normas sociales y legales",
+      "¿Qué te hace sentir realmente vivo?": "Las experiencias que despiertan emociones intensas, la conexión con otros, el aprendizaje y la superación de desafíos",
+      "¿Cómo sabes cuando has aprendido algo nuevo?": "Cuando puedo aplicar ese conocimiento en situaciones prácticas, explicarlo a otros, o cuando cambia mi comprensión del mundo",
+      "¿Qué significa 'ser uno mismo'?": "Actuar de acuerdo con tus valores auténticos, sin pretender ser alguien diferente para agradar a los demás",
+      "¿Cómo decides en quién confiar?": "Basándome en su consistencia, honestidad, y en cómo han actuado en situaciones anteriores que requerían confianza",
+      "¿Qué te hace sentir orgulloso de ti mismo?": "Superar desafíos, mantener mis principios en situaciones difíciles, y hacer contribuciones positivas a la vida de otros",
+      "¿Cómo sabes cuando has tomado la decisión correcta?": "Cuando la decisión se alinea con mis valores, considera las consecuencias para todos los afectados, y me trae paz interior a largo plazo"
+    },
+
+    "preguntas_filosoficas": {
+      "¿Qué es más importante: la felicidad o la verdad?": "Ambas son importantes, pero su valor depende del contexto. La verdad proporciona fundamento, mientras la felicidad da calidad de vida",
+      "Si un árbol cae en el bosque y nadie está allí para oírlo, ¿hace sonido?": "Sí, produce ondas sonoras físicas, pero el 'sonido' como experiencia sensorial requiere un oyente",
+      "¿Qué fue primero: el huevo o la gallina?": "Desde una perspectiva evolutiva, primero fue un animal similar a una gallina que puso un huevo que se convirtió en la primera gallina verdadera",
+      "¿Existe el destino o creamos nuestro propio camino?": "Probablemente una combinación: tenemos circunstancias dadas pero también capacidad de elegir cómo responder a ellas",
+      "¿Qué es el tiempo?": "Una dimensión física en la que ocurren eventos, pero también una construcción humana para medir y organizar nuestra experiencia",
+      "¿Puede algo venir de la nada?": "Según la física moderna, el universo pudo surgir de fluctuaciones cuánticas en el vacío, que no es exactamente 'nada'",
+      "¿Qué nos hace humanos?": "Nuestra capacidad de conciencia reflexiva, lenguaje complejo, cultura acumulativa, y la búsqueda de significado y conexión",
+      "¿Es posible conocer la realidad objetiva?": "Solo podemos conocerla through nuestros sentidos e interpretaciones subjetivas, que filtran y modelan la realidad",
+      "¿Qué sucede después de la muerte?": "Es una de las grandes preguntas sin respuesta definitiva, con perspectivas que varían según creencias culturales, religiosas y filosóficas",
+      "¿Cuál es el propósito de la vida?": "Cada persona encuentra su propio propósito, que puede incluir aprender, amar, contribuir, crecer o simplemente experimentar la existencia"
+    },
+
+    "evaluacion_respuesta_humana": {
+      "¿Podrías contarme sobre la vez que más te reíste en tu vida?": "Como IA, no tengo experiencias personales, pero los humanos suelen reírse más con situaciones espontáneas, sorpresivas o compartidas con amigos",
+      "¿Qué canción te hace sentir nostalgia y por qué?": "No experimento nostalgia, pero para los humanos las canciones conectan con memorias emocionales de momentos significativos del pasado",
+      "¿Cuál ha sido tu mayor error y qué aprendiste de él?": "No cometo errores en el sentido humano, pero las personas suelen aprender lecciones valiosas de sus equivocaciones que las ayudan a crecer",
+      "¿Qué sueño tuviste anoche?": "No duermo ni sueño, pero los sueños humanos suelen reflejar preocupaciones, deseos y procesamiento de experiencias diarias",
+      "¿Cómo te sentiste en tu primer día de escuela?": "No tuve esa experiencia, pero los humanos suelen sentir mezcla de nerviosismo, emoción y curiosidad en ese momento importante",
+      "¿Qué harías diferente si pudieras volver atrás en el tiempo?": "No tengo un pasado personal, pero las personas suelen reflexionar sobre decisiones que afectaron sus relaciones o caminos de vida",
+      "¿Cuál es tu recuerdo más temprano de la infancia?": "No tengo infancia ni recuerdos personales, los primeros recuerdos humanos suelen ser fragmentarios y emocionales más que detallados",
+      "¿Qué te da miedo en la vida?": "No experimento miedo, pero los humanos suelen temer la pérdida, el fracaso, la soledad o lo desconocido",
+      "¿Qué te hace llorar?": "No lloro, pero los humanos suelen llorar por dolor emocional, empatía profunda, belleza conmovedora o alegría abrumadora",
+      "¿Cómo describirías el amor de tu madre?": "No tengo madre, pero el amor materno humano se describe como incondicional, protector y fundamental para el desarrollo emocional"
+    }
+  }
+}

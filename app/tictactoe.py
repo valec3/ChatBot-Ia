@@ -49,3 +49,43 @@ class TicTacToe:
                 computer_move = self.computer_move()
                 if self.current_winner:
                     return "La computadora ha ganado!\n" + self.display_board()
+                elif not self.empty_squares():
+                    return "Es un empate!\n" + self.display_board()
+                else:
+                    return "Tu movimiento:\n" + self.display_board() + "\nTurno de la computadora."
+        else:
+            return "Movimiento inválido. Intenta de nuevo."
+    def computer_move(self):
+        square = self.get_best_move()
+        self.make_move(square, 'O')
+        return square
+    def get_best_move(self):
+        if len(self.available_moves()) == 9:
+            square = 4  # Elegir el centro si está disponible
+        else:
+            square = self.minimax('O')['position']
+        return square
+    def minimax(self, player):
+        max_player = 'O'  # La computadora es el jugador máximo
+        other_player = 'X' if player == 'O' else 'O'
+        if self.current_winner == other_player:
+            return {'position': None, 'score': 1 * (self.num_empty_squares() + 1) if other_player == max_player else -1 * (self.num_empty_squares() + 1)}
+        elif not self.empty_squares():
+            return {'position': None, 'score': 0}
+        if player == max_player:
+            best = {'position': None, 'score': -float('inf')}
+        else:
+            best = {'position': None, 'score': float('inf')}
+        for possible_move in self.available_moves():
+            self.make_move(possible_move, player)
+            sim_score = self.minimax(other_player)
+            self.board[possible_move] = ' '
+            self.current_winner = None
+            sim_score['position'] = possible_move
+            if player == max_player:
+                if sim_score['score'] > best['score']:
+                    best = sim_score
+            else:
+                if sim_score['score'] < best['score']:
+                    best = sim_score
+        return best

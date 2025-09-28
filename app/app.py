@@ -5,11 +5,11 @@ from tictactoe import TicTacToe
 from clasificador import Clasicador
 from calculator import Calculator
 def load_db_responses():
-    with open("db.json", "r", encoding="utf-8") as file:
+    with open("./db.json", "r", encoding="utf-8") as file:
         json_responses = json.load(file)
         return dict(json_responses)
 def load_db_personal_info():
-    with open("user_info.json", "r", encoding="utf-8") as file:
+    with open("./user_info.json", "r", encoding="utf-8") as file:
         json_personal_info = json.load(file)
         return dict(json_personal_info)
 def load_db_words ():
@@ -29,14 +29,12 @@ class ChatBot:
         self.personal_info = load_db_personal_info()
         self.current_mode = modes.NORMAL
         self.game = None  # Inicialmente no hay juego activo :v
+        self.is_playing = False
         self.classifier = Clasicador(self.responses)
         self.calculator = Calculator()
     def set_mode(self, mode):
         if mode in self.modes:
             self.current_mode = mode
-            print(5*"-")
-            print(f"Cambiando a modo: {mode.value}")
-            print(5*"-")
             return f"Modo cambiado a {mode.value}."
             
         else:
@@ -52,8 +50,11 @@ class ChatBot:
             return self.set_mode(modes.NORMAL)
     def get_input_prompt(self):
         prompt = input("Tú: ")
-        self.detect_mode(prompt)
-        return prompt.strip().lower()
+        if self.is_playing and prompt.strip().lower()  in ["1", "2", "3", "4", "5", "6", "7", "8", "0"]:
+            return prompt.strip().lower()
+        else:
+            self.detect_mode(prompt)
+            return prompt.strip().lower()
     def get_response_normal(self, prompt):
         words_prompt = prompt.split()
         # Buscar coincidencias en las opciones
@@ -61,6 +62,7 @@ class ChatBot:
             option_words = option.lower().split()
             common_words = set(option_words) & set(words_prompt)
             if len(common_words) >= 1:
+                self.save_response(prompt, self.responses[option])
                 return self.responses[option]
         return "No entiendo tu mensaje. ¿Puedes reformularlo?"
     def get_response_math(self, prompt):
@@ -69,6 +71,18 @@ class ChatBot:
             return f"El resultado es: {result}"
         else:
             return result
+    def handle_personal_info(self, prompt):
+        for keyword in self.keywords_info:
+            if keyword in prompt:
+                if keyword in self.personal_info:
+                    return f"Tu {keyword} es: {self.personal_info[keyword]}"
+                else:
+                    response = input(f"No tengo tu {keyword}. ¿Podrías proporcionármelo? ")
+                    self.save_response_personal_info(keyword, response)
+                    return f"Gracias por compartir tu {keyword}."
+        return "No reconozco la información personal que solicitas. Puedes preguntarme por: " + ", ".join(self.keywords_info)
+    def handle_test_turing(self, prompt):
+        return "Modo Test de Turing no implementado aún."
     def save_response(self, prompt, response):
         self.responses[prompt] = response
         with open("db.json", "w", encoding="utf-8") as file:
@@ -93,7 +107,8 @@ class ChatBot:
             except ValueError:
                 return "Por favor, ingresa un número del 0 al 8 para hacer tu movimiento."
     def run(self):
-        print(f"{self.name} (${self.current_mode}): ¡Hola! Soy tu asistente. ¿En qué puedo ayudarte hoy?")
+        print(80*"═")
+        print(f"{self.name} (${self.current_mode.value}): ¡Hola! Soy tu asistente. ¿En qué puedo ayudarte hoy?")
         while True:
             prompt = self.get_input_prompt()
             if prompt in ["salir", "exit", "quit"]:
@@ -106,9 +121,11 @@ class ChatBot:
             elif self.current_mode == modes.PERSONAL:
                 response = self.handle_personal_info(prompt)
             elif self.current_mode == modes.TICTACTOE:
+                self.is_playing = True
                 response = self.run_tictactoe(prompt)
             else:
                 response = "Modo no soportado actualmente."
+            print(80*"═")
             print(f"{self.name} ({self.current_mode.value}): {response}")
 
 

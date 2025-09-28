@@ -12,4 +12,3 @@ class Modes(Enum):
         return self.value
 
 
-print(Modes.NORMAL)
