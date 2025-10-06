@@ -4,6 +4,8 @@ from constants import Modes as modes
 from tictactoe import TicTacToe
 from clasificador import Clasicador
 from calculator import Calculator
+path_book = "./book-series-tiempo.txt"
+
 def load_db_responses():
     with open("./db.json", "r", encoding="utf-8") as file:
         json_responses = json.load(file)
@@ -57,6 +59,9 @@ class ChatBot:
             return prompt.strip().lower()
     def get_response_normal(self, prompt):
         words_prompt = prompt.split()
+        # Revisar coincidencia exacta
+        if prompt in self.responses:
+            return self.responses[prompt]
         # Buscar coincidencias en las opciones
         for option in self.responses:
             option_words = option.lower().split()
@@ -125,6 +130,7 @@ class ChatBot:
                 response = self.run_tictactoe(prompt)
             else:
                 response = "Modo no soportado actualmente."
+            self.save_response(prompt, response)
             print(80*"═")
             print(f"{self.name} ({self.current_mode.value}): {response}")
 

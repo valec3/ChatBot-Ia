@@ -11,7 +11,7 @@ class Clasicador:
         personal_keywords = ["nombre", "edad", "dirección", "teléfono", "correo", "cumpleaños"]
         return any(keyword in prompt for keyword in personal_keywords)
     def check_if_tictactoe_mode(self, prompt):
-        tictactoe_keywords = ["tictactoe", "tres en raya", "jugar"]
+        tictactoe_keywords = ["tic tac toe","tictactoe", "tres en raya", "jugar"]
         return any(keyword in prompt for keyword in tictactoe_keywords)
     def check_if_test_turning_mode(self, prompt):
         test_keywords = ["test", "prueba", "exam"]
